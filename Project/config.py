@@ -5,13 +5,13 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'udacitybertelsmanprj'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'xxxxxxxxxxxxxxxx'
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'udacityprojectsqlsrv.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacityprojectdb'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'udacity'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'udacityxxxxxxxxxxxxx.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacityxxxxxxxxxxxxxxxxxxxxxdb'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'xxxxxxxxxxx'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'xxxxxxxxxxx'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
